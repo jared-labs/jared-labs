@@ -1,16 +1,30 @@
-## Hi there 👋
+<h1>Hi, I'm Jared!
+  
+- <h2>Homelab</h2>
 
-<!--
-**jared-labs/jared-labs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  - Network Overview
+  - Proxmox Cluster
+  - NAS
 
-Here are some ideas to get you started:
+- <h2>Self-Hosted Services</h2>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  - Home Assistant
+  - Jump Station
+  - OctoPrint
+  - SmokePing
+  - Zabbix
+  - WireGuard
+  - Omada SDN
+
+- <h2>Automation</h2>
+
+  - Home Assistant Dashboard Overview
+  - Chicken Coop
+  - Lighting
+
+- <h2>Maker / Tools</h2>
+
+- <h2>Comms & Field Tech</h2>
+
+  - ATAK Server
+  - F-150 Comms
