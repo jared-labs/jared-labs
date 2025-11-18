@@ -33,7 +33,7 @@ _This is a living document; sections reflect current reality and evolve over tim
 
 ## Self-Hosted Services
 - Proxmox (Hypervisor)
-  - [Add a Proxmox node runbook](docs/homelab/runbooks/add-node.md)
+  - [Add a Proxmox node runbook](https://github.com/jared-labs/New-Proxmox-Node-Runbook)
 - Open-AudIT
   - [Open-AudIT VM Spinup Runbook](https://github.com/jared-labs/Open-AudIT-Runbook)
 - Cribl
