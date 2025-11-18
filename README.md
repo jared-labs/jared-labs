@@ -34,7 +34,8 @@ _This is a living document; sections reflect current reality and evolve over tim
 ## Self-Hosted Services
 - Proxmox (Hypervisor)
   - [Add a Proxmox node runbook](docs/homelab/runbooks/add-node.md)
-- Home Assistant
+- Open-AudIT
+  - [Open-AudIT VM Spinup Runbook](https://github.com/jared-labs/Open-AudIT-Runbook)
 - Cribl
   - [Cribl VM Spinup Runbook](https://github.com/jared-labs/Cribl-Runbook)
 - Graylog
@@ -42,6 +43,7 @@ _This is a living document; sections reflect current reality and evolve over tim
 - OpenVAS
   - [OpenVAS VM Spinup Runbook](https://github.com/jared-labs/OpenVAS-Runbook)
 - OctoPrint
+- Home Assistant
 - SmokePing
 - WireGuard
 - Omada SDN
