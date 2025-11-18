@@ -1,4 +1,4 @@
-# Homelab & Projects — Jared Shaw
+# Homelab & Projects
 
 > **What is this?**  
 > My living lab notebook + portfolio. It documents how I run my homelab Proxmox cluster and adjacent personal projects. Expect a mix of **runbooks I actually use**, architecture/decisions, inventories, and the occasional one-off build. Not everything here is pure IT/SysAdmin/SecOps.
