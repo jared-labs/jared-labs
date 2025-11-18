@@ -42,16 +42,9 @@ _This is a living document; sections reflect current reality and evolve over tim
   - [Graylog VM Spinup Runbook](https://github.com/jared-labs/Graylog-Runbook)
 - OpenVAS
   - [OpenVAS VM Spinup Runbook](https://github.com/jared-labs/OpenVAS-Runbook)
-- OctoPrint
-- Home Assistant
-- SmokePing
-- WireGuard
-- Omada SDN
 
 ## Automation
-- Home Assistant Dashboard Overview
-- Chicken Coop
-- Lighting
+*(projects to be added)*
 
 ## Maker / Tools
 *(projects to be added)*
