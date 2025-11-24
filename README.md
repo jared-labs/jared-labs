@@ -53,11 +53,3 @@ _This is a living document; sections reflect current reality and evolve over tim
 *(projects to be added)*
 
 ---
-
-## Related runbooks (separate repos)
-- **Cribl Stream:** https://github.com/jared-labs/Cribl-Runbook  
-- **Graylog:** https://github.com/jared-labs/Graylog-Runbook  
-- **New Proxmox Node:** https://github.com/jared-labs/New-Proxmox-Node-Runbook  
-- **OpenVAS / Greenbone:** https://github.com/jared-labs/OpenVAS-Runbook  
-- **Open-AudIT:** https://github.com/jared-labs/Open-AudIT-Runbook  
-- **Proxmox Cluster (this repo):** https://github.com/jared-labs/Proxmox-Cluster
