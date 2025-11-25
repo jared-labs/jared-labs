@@ -42,6 +42,8 @@ _This is a living document; sections reflect current reality and evolve over tim
   - [Graylog VM Spinup Runbook](https://github.com/jared-labs/Graylog-Runbook)
 - OpenVAS
   - [OpenVAS VM Spinup Runbook](https://github.com/jared-labs/OpenVAS-Runbook)
+- MISP
+  - [MISP VM Spinup Runbook](https://github.com/jared-labs/MISP-Runbook)
 
 ## Automation
 *(projects to be added)*
