@@ -44,6 +44,7 @@ _This is a living document; sections reflect current reality and evolve over tim
   - [OpenVAS VM Spinup Runbook](https://github.com/jared-labs/OpenVAS-Runbook)
 - MISP
   - [MISP VM Spinup Runbook](https://github.com/jared-labs/MISP-Runbook)
+  - [MISP Initial ConfiguRATION](https://github.com/jared-labs/MISP-Initial-Configuration)
 
 ## Automation
 *(projects to be added)*
