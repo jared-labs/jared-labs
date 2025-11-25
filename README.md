@@ -45,6 +45,7 @@ _This is a living document; sections reflect current reality and evolve over tim
 - MISP
   - [MISP VM Spinup Runbook](https://github.com/jared-labs/MISP-Runbook)
   - [MISP Initial Configuration](https://github.com/jared-labs/MISP-Initial-Configuration)
+  - [MISP to Cribl IOC Export & Enrichment Runbook](https://github.com/jared-labs/MISP-to-Cribl-IOC-Export-Enrichment-Runbook)
 
 ## Automation
 *(projects to be added)*
