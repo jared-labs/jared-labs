@@ -1,58 +1,79 @@
-# Homelab & Projects
+# Jared Shaw — Home Lab & Security Projects
 
-> **What is this?**  
-> My living lab notebook + portfolio. It documents how I run my homelab Proxmox cluster and adjacent personal projects. Expect a mix of **runbooks I actually use**, architecture/decisions, inventories, and the occasional one-off build. Not everything here is pure IT/SysAdmin/SecOps.
+Operational documentation from a multi-node home lab focused on security monitoring, vulnerability management, and infrastructure automation.
 
-## What you’ll find
-- **Runbooks:** spinning up VMs/services, adding a Proxmox node, rolling upgrades, backup/restore tests.
-- **Docs:** topology, decisions, inventories, storage/backups, gotchas.
-- **Troubleshooting:** real-world quirks and fixes I’ve hit.
-- **One-offs:** Home Assistant automations, 3D/DIY, etc.
+## Lab Infrastructure
 
-## What this is not
-- A step-by-step vendor tutorial.
-- A place for secrets (keys/creds are redacted or omitted).
+7-node Proxmox cluster running 14+ VMs and containers across a segmented 10.0.0.0/24 network with dedicated ranges for IoT, servers, and DHCP.
 
-## Who it’s for
-- **Me** — operational notes I can repeat.
-- **You** — see how I work or borrow what helps.
-
-## Repo layout
-- `README.md` — high-level overview and current state (this page)  
-- `docs/homelab/runbooks/` — task-oriented runbooks (coming online)  
-- `assets/` — screenshots/diagrams
-
-_This is a living document; sections reflect current reality and evolve over time._
+**Core Stack:** Proxmox VE · TrueNAS · Graylog · Cribl · OpenVAS · MISP · Open-AudIT · Home Assistant · WireGuard · N8N
 
 ---
 
-## Homelab
-- Network Overview
-- [Proxmox Cluster](https://github.com/jared-labs/Proxmox-Cluster)
-- NAS
+## Runbooks
 
-## Self-Hosted Services
-- Proxmox (Hypervisor)
-  - [Add a Proxmox node runbook](https://github.com/jared-labs/New-Proxmox-Node-Runbook)
-- Open-AudIT
-  - [Open-AudIT VM Spinup Runbook](https://github.com/jared-labs/Open-AudIT-Runbook)
-- Cribl
-  - [Cribl VM Spinup Runbook](https://github.com/jared-labs/Cribl-Runbook)
-- Graylog
-  - [Graylog VM Spinup Runbook](https://github.com/jared-labs/Graylog-Runbook)
-- OpenVAS
-  - [OpenVAS VM Spinup Runbook](https://github.com/jared-labs/OpenVAS-Runbook)
-- MISP
-  - [MISP VM Spinup Runbook](https://github.com/jared-labs/MISP-Runbook)
-  - [MISP Initial Configuration](https://github.com/jared-labs/MISP-Initial-Configuration)
-  - [MISP to Cribl IOC Export & Enrichment Runbook](https://github.com/jared-labs/MISP-to-Cribl-IOC-Export-Enrichment-Runbook)
+Sanitized, repeatable procedures for standing up and configuring each service.
 
-## 3D Models
-  - [ANYSECU T68 4G PoC Network Radio Button Cover](https://www.thingiverse.com/thing:7222981)
-  - [Suzuki KingQuad / QuadRunner Round Headlight Mount](https://www.thingiverse.com/thing:6703471)
-  - [KLR250 LED Headlight Bracket](https://www.thingiverse.com/thing:6740377)
-  - [U94 PTT Vertical Molle Bungee Retaining Plate](https://www.thingiverse.com/thing:6424578)
+### Hypervisor & Infrastructure
 
+| Runbook | Description |
+|---------|-------------|
+| [Proxmox Cluster](https://github.com/jared-labs/Proxmox-Cluster) | Cluster architecture, storage, and networking |
+| [New Proxmox Node](https://github.com/jared-labs/New-Proxmox-Node-Runbook) | Adding a node to the existing cluster |
 
+### Security & Monitoring
+
+| Runbook | Description |
+|---------|-------------|
+| [Graylog](https://github.com/jared-labs/Graylog-Runbook) | SIEM deployment — inputs, streams, index sets |
+| [Cribl](https://github.com/jared-labs/Cribl-Runbook) | Log routing — pipelines, sources, destinations |
+| [OpenVAS](https://github.com/jared-labs/OpenVAS-Runbook) | Vulnerability scanner setup and scan configuration |
+| [Open-AudIT](https://github.com/jared-labs/Open-AudIT-Runbook) | Asset inventory and network discovery |
+
+### Threat Intelligence
+
+| Runbook | Description |
+|---------|-------------|
+| [MISP Deployment](https://github.com/jared-labs/MISP-Runbook) | Threat intel platform setup |
+| [MISP Initial Config](https://github.com/jared-labs/MISP-Initial-Configuration) | Feeds, taxonomies, and sharing groups |
+| [MISP → Cribl IOC Export](https://github.com/jared-labs/MISP-to-Cribl-IOC-Export-Enrichment-Runbook) | Enriching log streams with threat intel IOCs |
+
+### Identity & Access
+
+| Runbook | Description |
+|---------|-------------|
+| [Vaultwarden](https://github.com/jared-labs/Vaultwarden-Runbook) | Self-hosted password manager deployment |
 
 ---
+
+## Log Pipeline
+
+```
+Sources                    Routing              SIEM
+──────────────────────    ─────────────        ──────────────
+Proxmox hosts        ──►                  ──►
+Omada SDN Controller ──►  Cribl Stream    ──►  Graylog
+OpenVAS scan results ──►                  ──►
+rsyslog (Linux VMs)  ──►                  ──►
+```
+
+## Threat Intel Flow
+
+```
+MISP (IOC feeds) ──► Cribl (enrichment) ──► Graylog (correlation/alerting)
+```
+
+---
+
+## 3D Prints & DIY
+
+| Project | Link |
+|---------|------|
+| ANYSECU T68 4G Radio Button Cover | [Thingiverse](https://www.thingiverse.com/thing:7222981) |
+| Suzuki KingQuad Headlight Mount | [Thingiverse](https://www.thingiverse.com/thing:6703471) |
+| KLR250 LED Headlight Bracket | [Thingiverse](https://www.thingiverse.com/thing:6740377) |
+| U94 PTT Vertical Molle Retaining Plate | [Thingiverse](https://www.thingiverse.com/thing:6424578) |
+
+---
+
+*This is a living document. Runbooks reflect real operational procedures from an active lab environment.*
