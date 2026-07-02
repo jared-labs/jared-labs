@@ -6,7 +6,7 @@ Operational documentation from a multi-node home lab focused on security monitor
 
 7-node Proxmox cluster running 14+ VMs and containers across a segmented 10.0.0.0/24 network with dedicated ranges for IoT, servers, and DHCP.
 
-**Core Stack:** Proxmox VE · TrueNAS · Graylog · Cribl · OpenVAS · MISP · Open-AudIT · Home Assistant · WireGuard · N8N
+**Core Stack:** Proxmox VE · TrueNAS · Graylog · Cribl · OpenVAS · MISP · Open-AudIT · Home Assistant · WireGuard · N8N · TAK Server
 
 ---
 
@@ -37,6 +37,12 @@ Sanitized, repeatable procedures for standing up and configuring each service.
 | [MISP Deployment](https://github.com/jared-labs/MISP-Runbook) | Threat intel platform setup |
 | [MISP Initial Config](https://github.com/jared-labs/MISP-Initial-Configuration) | Feeds, taxonomies, and sharing groups |
 | [MISP → Cribl IOC Export](https://github.com/jared-labs/MISP-to-Cribl-IOC-Export-Enrichment-Runbook) | Enriching log streams with threat intel IOCs |
+
+### Situational Awareness
+
+| Runbook | Description |
+|---------|-------------|
+| [TAK Server](https://github.com/jared-labs/TAK-Server-Runbook) | CoT routing, upgrade procedures, certificate management |
 
 ### Identity & Access
 
