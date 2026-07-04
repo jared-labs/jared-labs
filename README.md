@@ -27,7 +27,7 @@ Sanitized, repeatable procedures for standing up and configuring each service.
 |---------|-------------|
 | [Graylog](https://github.com/jared-labs/Graylog-Runbook) | SIEM deployment — inputs, streams, index sets |
 | [Cribl](https://github.com/jared-labs/Cribl-Runbook) | Log routing — pipelines, sources, destinations |
-| [OpenVAS](https://github.com/jared-labs/OpenVAS-Runbook) | Vulnerability scanning program — architecture, scheduling, feed management |
+| [OpenVAS Pipeline](https://github.com/jared-labs/OpenVAS-Runbook) | OpenVAS → Cribl → Graylog vulnerability pipeline — field schema, scan waves, design decisions |
 | [Open-AudIT](https://github.com/jared-labs/Open-AudIT-Runbook) | Asset inventory and network discovery |
 
 ### Threat Intelligence
