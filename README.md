@@ -27,7 +27,7 @@ Sanitized, repeatable procedures for standing up and configuring each service.
 |---------|-------------|
 | [Graylog](https://github.com/jared-labs/Graylog-Runbook) | SIEM deployment — inputs, streams, index sets |
 | [Cribl](https://github.com/jared-labs/Cribl-Runbook) | Log routing — pipelines, sources, destinations |
-| [OpenVAS](https://github.com/jared-labs/OpenVAS-Runbook) | Vulnerability scanner setup and scan configuration |
+| [OpenVAS](https://github.com/jared-labs/OpenVAS-Runbook) | Vulnerability scanning program — architecture, scheduling, feed management |
 | [Open-AudIT](https://github.com/jared-labs/Open-AudIT-Runbook) | Asset inventory and network discovery |
 
 ### Threat Intelligence
@@ -38,11 +38,17 @@ Sanitized, repeatable procedures for standing up and configuring each service.
 | [MISP Initial Config](https://github.com/jared-labs/MISP-Initial-Configuration) | Feeds, taxonomies, and sharing groups |
 | [MISP → Cribl IOC Export](https://github.com/jared-labs/MISP-to-Cribl-IOC-Export-Enrichment-Runbook) | Enriching log streams with threat intel IOCs |
 
+### Automation & Fleet Management
+
+| Runbook | Description |
+|---------|-------------|
+| [Ansible Fleet Management](https://github.com/jared-labs/Ansible-Fleet-Management) | Control node design, inventory modeling, patch orchestration |
+
 ### Situational Awareness
 
 | Runbook | Description |
 |---------|-------------|
-| [TAK Server](https://github.com/jared-labs/TAK-Server-Runbook) | CoT routing, upgrade procedures, certificate management |
+| [TAK Server](https://github.com/jared-labs/TAK-Server-Runbook) | mTLS coordination platform, service architecture, upgrade strategy |
 
 ### Identity & Access
 
