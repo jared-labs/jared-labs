@@ -31,6 +31,7 @@ Sanitized, repeatable procedures for standing up and configuring each service.
 | [OpenVAS](https://github.com/jared-labs/OpenVAS-Runbook) | Greenbone deployment, authenticated scanning, feed management, wave scheduling |
 | [OpenVAS → Graylog Pipeline](https://github.com/jared-labs/OpenVAS-to-Graylog-Pipeline) | Security data pipeline — NDJSON export, field schema, SIEM integration, design decisions |
 | [Open-AudIT](https://github.com/jared-labs/Open-AudIT-Runbook) | Asset inventory and network discovery |
+| [Detection Engineering Runbook](https://github.com/jared-labs/Detection-Engineering-Runbook) | Sanitized home lab SIEM detection engineering runbook with Graylog event definitions, alert lifecycle guidance, and posture-based detection examples |
 
 ### Threat Intelligence
 
