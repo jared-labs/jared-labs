@@ -20,6 +20,7 @@ Sanitized, repeatable procedures for standing up and configuring each service.
 |---------|-------------|
 | [Proxmox Cluster](https://github.com/jared-labs/Proxmox-Cluster) | Cluster architecture, storage, and networking |
 | [New Proxmox Node](https://github.com/jared-labs/New-Proxmox-Node-Runbook) | Adding a node to the existing cluster |
+| [Proxmox PVE 9 Cluster Upgrade](https://github.com/jared-labs/Proxmox-PVE9-Cluster-Upgrade) | Rolling PVE 8→9 upgrade across 7 nodes — GRUB EFI recovery, canary strategy |
 
 ### Security & Monitoring
 
